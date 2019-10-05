@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-Hu-EF5" userLabel="headerView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-Hu-EF5" userLabel="headerView" customClass="HeaderView" customModule="Bitcoin_price_ios" customModuleProvider="target">
                                 <rect key="frame" x="16" y="60" width="382" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd7-GX-YYv" userLabel="titleLabel">
@@ -56,7 +56,7 @@
                                     <constraint firstAttribute="bottom" secondItem="k6G-Np-1yf" secondAttribute="bottom" id="y6j-W1-Mhm"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhj-es-J2V" userLabel="bodyView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhj-es-J2V" userLabel="bodyView" customClass="BodyView" customModule="Bitcoin_price_ios" customModuleProvider="target">
                                 <rect key="frame" x="16" y="104" width="382" height="681"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iD0-qC-DbR" userLabel="priceView">
@@ -185,7 +185,7 @@
                                     <constraint firstItem="iD0-qC-DbR" firstAttribute="leading" secondItem="Lhj-es-J2V" secondAttribute="leading" constant="16" id="xKt-aA-Pir"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-eh-8cR" userLabel="footerView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-eh-8cR" userLabel="footerView" customClass="FooterView" customModule="Bitcoin_price_ios" customModuleProvider="target">
                                 <rect key="frame" x="16" y="801" width="382" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmA-QO-g9e" userLabel="weakButton">
@@ -257,6 +257,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bodyView" destination="Lhj-es-J2V" id="vkK-qB-H5B"/>
+                        <outlet property="footerView" destination="fcq-eh-8cR" id="L97-ho-7DM"/>
+                        <outlet property="headerView" destination="eEQ-Hu-EF5" id="Cqe-n8-llb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
