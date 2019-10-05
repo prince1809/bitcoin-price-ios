@@ -44,6 +44,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" image="ic_refresh"/>
+                                        <connections>
+                                            <action selector="refreshSelect:" destination="eEQ-Hu-EF5" eventType="touchUpInside" id="4zi-dA-kxU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

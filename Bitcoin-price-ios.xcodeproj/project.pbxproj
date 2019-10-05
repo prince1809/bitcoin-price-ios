@@ -20,6 +20,7 @@
 		A372FF37234895290053B581 /* ReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF36234895290053B581 /* ReferenceType.swift */; };
 		A372FF39234895D40053B581 /* MainViewController+HeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF38234895D40053B581 /* MainViewController+HeaderDelegate.swift */; };
 		A372FF3B23489F9B0053B581 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */; };
+		A372FF3F2348B76E0053B581 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF3E2348B76E0053B581 /* UIView+Animations.swift */; };
 		ABF87147A038AC2F46328DAF /* Pods_Bitcoin_price_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		A372FF36234895290053B581 /* ReferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceType.swift; sourceTree = "<group>"; };
 		A372FF38234895D40053B581 /* MainViewController+HeaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+HeaderDelegate.swift"; sourceTree = "<group>"; };
 		A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		A372FF3E2348B76E0053B581 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcoin_price_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6EDA018A4BAB48EFB3B128 /* Pods-Bitcoin-price-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcoin-price-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,9 +81,6 @@
 			children = (
 				A372FEF4234794C70053B581 /* Assets.xcassets */,
 				A372FF2323486C6A0053B581 /* Classes */,
-				A372FF2A23486E550053B581 /* Services */,
-				A372FF22234865090053B581 /* UI */,
-				A372FF2423486C7D0053B581 /* View */,
 				A372FEF9234794C70053B581 /* Info.plist */,
 			);
 			path = "Bitcoin-price-ios";
@@ -97,12 +96,14 @@
 		A372FF2323486C6A0053B581 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A372FF312348934E0053B581 /* Helper */,
 				A372FEEB234794C60053B581 /* AppDelegate.swift */,
 				A372FEED234794C60053B581 /* SceneDelegate.swift */,
+				A372FF402348B8530053B581 /* Controller */,
+				A372FF312348934E0053B581 /* Helper */,
 				A372FF2923486E4D0053B581 /* Model */,
-				A372FF2623486C960053B581 /* Body */,
-				A372FF2523486C8C0053B581 /* View */,
+				A372FF2A23486E550053B581 /* Services */,
+				A372FF22234865090053B581 /* UI */,
+				A372FF2423486C7D0053B581 /* View */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -113,7 +114,8 @@
 				A372FEF6234794C70053B581 /* LaunchScreen.storyboard */,
 				A372FEF1234794C60053B581 /* Main.storyboard */,
 			);
-			path = View;
+			name = View;
+			path = ../View;
 			sourceTree = "<group>";
 		};
 		A372FF2523486C8C0053B581 /* View */ = {
@@ -155,8 +157,18 @@
 			children = (
 				A372FF322348936F0053B581 /* UserDefaults+App.swift */,
 				A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */,
+				A372FF3E2348B76E0053B581 /* UIView+Animations.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		A372FF402348B8530053B581 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A372FF2623486C960053B581 /* Body */,
+				A372FF2523486C8C0053B581 /* View */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		F29A03F0790A8759E0169413 /* Pods */ = {
@@ -298,6 +310,7 @@
 				A372FF3B23489F9B0053B581 /* NSObject+ClassName.swift in Sources */,
 				A372FF2C23486EE60053B581 /* HeaderView.swift in Sources */,
 				A372FF37234895290053B581 /* ReferenceType.swift in Sources */,
+				A372FF3F2348B76E0053B581 /* UIView+Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

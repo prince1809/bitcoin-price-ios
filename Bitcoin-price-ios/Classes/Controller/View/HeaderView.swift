@@ -25,4 +25,9 @@ class HeaderView: UIView {
         super.awakeFromNib()
         self.titleLabel.text = "Bitcoin Price"
     }
+    
+    @IBAction func refreshSelect(_ sender: UIButton) {
+        sender.heartAnimation()
+        delegate?.headerViewRefreshDidSelect()
+    }
 }
