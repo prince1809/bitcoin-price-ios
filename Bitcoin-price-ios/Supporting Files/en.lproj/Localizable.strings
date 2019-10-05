@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Bitcoin-price-ios
+
+  Created by Prince Kumar on 2019/10/05.
+  Copyright © 2019 Prince Kumar. All rights reserved.
+*/
+
+// MARK: - ReferenceType
+
+"reference_type.week" = "Week";
+"reference_type.month" = "Month";
+"reference_type.year" = "Year";
+"reference_type.all" = "All";

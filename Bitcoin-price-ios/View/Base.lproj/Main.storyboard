@@ -193,12 +193,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-eh-8cR" userLabel="footerView" customClass="FooterView" customModule="Bitcoin_price_ios" customModuleProvider="target">
                                 <rect key="frame" x="16" y="801" width="382" height="45"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmA-QO-g9e" userLabel="weakButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmA-QO-g9e" userLabel="weekButton">
                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
                                         <color key="tintColor" red="0.30980392159999998" green="0.70980392160000005" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Week">
+                                            <color key="titleColor" red="0.29803921570000003" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVO-3s-GkM" userLabel="monthButton">
+                                        <rect key="frame" x="99.5" y="0.0" width="83.5" height="45"/>
+                                        <color key="tintColor" red="0.0" green="0.7843137255" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Month">
                                             <color key="titleColor" red="0.29803921570000003" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
@@ -214,13 +221,6 @@
                                         <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
                                         <color key="tintColor" red="0.0" green="0.7843137255" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="All">
-                                            <color key="titleColor" red="0.29803921570000003" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVO-3s-GkM" userLabel="monthButton">
-                                        <rect key="frame" x="99.5" y="0.0" width="83.5" height="45"/>
-                                        <color key="tintColor" red="0.0" green="0.7843137255" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Month">
                                             <color key="titleColor" red="0.29803921570000003" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
@@ -245,6 +245,12 @@
                                     <constraint firstItem="ULa-76-dSU" firstAttribute="leading" secondItem="cVO-3s-GkM" secondAttribute="trailing" constant="16" id="lUd-GX-Ktj"/>
                                     <constraint firstItem="qfF-xu-ZdP" firstAttribute="top" secondItem="fcq-eh-8cR" secondAttribute="top" id="xxN-pR-xQJ"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="allButton" destination="qfF-xu-ZdP" id="MDE-fr-ny4"/>
+                                    <outlet property="monthButton" destination="cVO-3s-GkM" id="Tli-PD-Ufg"/>
+                                    <outlet property="weekButton" destination="KmA-QO-g9e" id="bjA-NJ-dHn"/>
+                                    <outlet property="yearButton" destination="ULa-76-dSU" id="lPi-jr-eOt"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

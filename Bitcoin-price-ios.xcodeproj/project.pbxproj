@@ -21,6 +21,8 @@
 		A372FF39234895D40053B581 /* MainViewController+HeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF38234895D40053B581 /* MainViewController+HeaderDelegate.swift */; };
 		A372FF3B23489F9B0053B581 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */; };
 		A372FF3F2348B76E0053B581 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF3E2348B76E0053B581 /* UIView+Animations.swift */; };
+		A372FF442348BBD40053B581 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A372FF462348BBD40053B581 /* Localizable.strings */; };
+		A372FF482348BC450053B581 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF472348BC450053B581 /* String+Localized.swift */; };
 		ABF87147A038AC2F46328DAF /* Pods_Bitcoin_price_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		A372FF38234895D40053B581 /* MainViewController+HeaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+HeaderDelegate.swift"; sourceTree = "<group>"; };
 		A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		A372FF3E2348B76E0053B581 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		A372FF452348BBD40053B581 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A372FF472348BC450053B581 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcoin_price_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6EDA018A4BAB48EFB3B128 /* Pods-Bitcoin-price-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcoin-price-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,8 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				A372FEF4234794C70053B581 /* Assets.xcassets */,
-				A372FF2323486C6A0053B581 /* Classes */,
 				A372FEF9234794C70053B581 /* Info.plist */,
+				A372FF2323486C6A0053B581 /* Classes */,
+				A372FF412348BBA90053B581 /* Supporting Files */,
 			);
 			path = "Bitcoin-price-ios";
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 				A372FF322348936F0053B581 /* UserDefaults+App.swift */,
 				A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */,
 				A372FF3E2348B76E0053B581 /* UIView+Animations.swift */,
+				A372FF472348BC450053B581 /* String+Localized.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -169,6 +175,14 @@
 				A372FF2523486C8C0053B581 /* View */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A372FF412348BBA90053B581 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A372FF462348BBD40053B581 /* Localizable.strings */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F29A03F0790A8759E0169413 /* Pods */ = {
@@ -249,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A372FEF8234794C70053B581 /* LaunchScreen.storyboard in Resources */,
+				A372FF442348BBD40053B581 /* Localizable.strings in Resources */,
 				A372FEF5234794C70053B581 /* Assets.xcassets in Resources */,
 				A372FEF3234794C60053B581 /* Main.storyboard in Resources */,
 			);
@@ -306,6 +321,7 @@
 				A372FF39234895D40053B581 /* MainViewController+HeaderDelegate.swift in Sources */,
 				A372FEEE234794C60053B581 /* SceneDelegate.swift in Sources */,
 				A372FF2E23486EF30053B581 /* FooterView.swift in Sources */,
+				A372FF482348BC450053B581 /* String+Localized.swift in Sources */,
 				A372FF332348936F0053B581 /* UserDefaults+App.swift in Sources */,
 				A372FF3B23489F9B0053B581 /* NSObject+ClassName.swift in Sources */,
 				A372FF2C23486EE60053B581 /* HeaderView.swift in Sources */,
@@ -331,6 +347,14 @@
 				A372FEF7234794C70053B581 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A372FF462348BBD40053B581 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A372FF452348BBD40053B581 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
