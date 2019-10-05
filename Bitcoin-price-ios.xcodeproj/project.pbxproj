@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		A372FEEC234794C60053B581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FEEB234794C60053B581 /* AppDelegate.swift */; };
 		A372FEEE234794C60053B581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FEED234794C60053B581 /* SceneDelegate.swift */; };
-		A372FEF0234794C60053B581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FEEF234794C60053B581 /* ViewController.swift */; };
 		A372FEF3234794C60053B581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A372FEF1234794C60053B581 /* Main.storyboard */; };
 		A372FEF5234794C70053B581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A372FEF4234794C70053B581 /* Assets.xcassets */; };
 		A372FEF8234794C70053B581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A372FEF6234794C70053B581 /* LaunchScreen.storyboard */; };
+		A372FF2823486CF20053B581 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF2723486CF20053B581 /* MainViewController.swift */; };
 		ABF87147A038AC2F46328DAF /* Pods_Bitcoin_price_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +21,11 @@
 		A372FEE8234794C60053B581 /* Bitcoin-price-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitcoin-price-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A372FEEB234794C60053B581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A372FEED234794C60053B581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A372FEEF234794C60053B581 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A372FEF2234794C60053B581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A372FEF4234794C70053B581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A372FEF7234794C70053B581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A372FEF9234794C70053B581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A372FF2723486CF20053B581 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcoin_price_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6EDA018A4BAB48EFB3B128 /* Pods-Bitcoin-price-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcoin-price-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,9 +46,9 @@
 			isa = PBXGroup;
 			children = (
 				A372FEEA234794C60053B581 /* Bitcoin-price-ios */,
-				A372FEE9234794C60053B581 /* Products */,
-				F29A03F0790A8759E0169413 /* Pods */,
 				F9A03603E4F97DBCBAEBC3C5 /* Frameworks */,
+				F29A03F0790A8759E0169413 /* Pods */,
+				A372FEE9234794C60053B581 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,15 +63,71 @@
 		A372FEEA234794C60053B581 /* Bitcoin-price-ios */ = {
 			isa = PBXGroup;
 			children = (
-				A372FEEB234794C60053B581 /* AppDelegate.swift */,
-				A372FEED234794C60053B581 /* SceneDelegate.swift */,
-				A372FEEF234794C60053B581 /* ViewController.swift */,
-				A372FEF1234794C60053B581 /* Main.storyboard */,
 				A372FEF4234794C70053B581 /* Assets.xcassets */,
-				A372FEF6234794C70053B581 /* LaunchScreen.storyboard */,
+				A372FF2323486C6A0053B581 /* Classes */,
+				A372FF2923486E4D0053B581 /* Model */,
+				A372FF2A23486E550053B581 /* Services */,
+				A372FF22234865090053B581 /* UI */,
+				A372FF2423486C7D0053B581 /* View */,
 				A372FEF9234794C70053B581 /* Info.plist */,
 			);
 			path = "Bitcoin-price-ios";
+			sourceTree = "<group>";
+		};
+		A372FF22234865090053B581 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A372FF2323486C6A0053B581 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A372FEEB234794C60053B581 /* AppDelegate.swift */,
+				A372FEED234794C60053B581 /* SceneDelegate.swift */,
+				A372FF2623486C960053B581 /* Body */,
+				A372FF2523486C8C0053B581 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A372FF2423486C7D0053B581 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A372FEF6234794C70053B581 /* LaunchScreen.storyboard */,
+				A372FEF1234794C60053B581 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A372FF2523486C8C0053B581 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A372FF2723486CF20053B581 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A372FF2623486C960053B581 /* Body */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Body;
+			sourceTree = "<group>";
+		};
+		A372FF2923486E4D0053B581 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A372FF2A23486E550053B581 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		F29A03F0790A8759E0169413 /* Pods */ = {
@@ -203,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A372FEF0234794C60053B581 /* ViewController.swift in Sources */,
+				A372FF2823486CF20053B581 /* MainViewController.swift in Sources */,
 				A372FEEC234794C60053B581 /* AppDelegate.swift in Sources */,
 				A372FEEE234794C60053B581 /* SceneDelegate.swift in Sources */,
 			);
