@@ -23,7 +23,7 @@ class HeaderView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.titleLabel.text = "Bitcoin Price"
+        self.titleLabel.text = "body_price_view.title".localized
     }
     
     @IBAction func refreshSelect(_ sender: UIButton) {

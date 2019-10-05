@@ -32,6 +32,8 @@ class MainViewController: UIViewController {
     
     private func setupViews(reference: ReferenceType) {
         headerView.delegate = self
+        footerView.delegate = self
+        //footerView.setRefe
     }
 
 }

@@ -134,7 +134,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="4kB-yg-oWb" secondAttribute="bottom" id="w8I-B1-GeR"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pST-Jg-NAa" userLabel="chartView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pST-Jg-NAa" userLabel="chartView" customClass="ChartView" customModule="Bitcoin_price_ios" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="58.5" width="350" height="490"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
@@ -178,6 +178,13 @@
                                             <constraint firstItem="oRE-ky-Wfv" firstAttribute="top" secondItem="xsD-8x-KZl" secondAttribute="top" id="dT3-9f-NUX"/>
                                             <constraint firstAttribute="bottom" secondItem="pST-Jg-NAa" secondAttribute="bottom" id="x5V-iL-I2m"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="chartView" destination="pST-Jg-NAa" id="UAP-aA-q1O"/>
+                                            <outlet property="indicatorImageView" destination="tuO-ES-wDI" id="kgD-Li-UDe"/>
+                                            <outlet property="percentLabel" destination="zEQ-ZF-ftC" id="6me-Sn-UKJ"/>
+                                            <outlet property="referenceLabel" destination="4kB-yg-oWb" id="IVS-Yh-Urd"/>
+                                            <outlet property="titleLabel" destination="vXV-gm-x2M" id="mOd-PP-VLR"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

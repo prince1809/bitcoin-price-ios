@@ -10,5 +10,9 @@ target 'Bitcoin-price-ios' do
   # Alamofire (HTTP networking)
   # https://github.com/Alamofire/Alamofire
   pod 'Alamofire'
+  
+  # Charts (Beautiful charts for iOS/tvOS/OSX)
+  # https://github.com/danielgindi/Charts
+  pod 'Charts'
 
 end

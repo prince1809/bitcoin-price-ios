@@ -28,6 +28,13 @@
 		A372FF502348C31C0053B581 /* BodyPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF4F2348C31C0053B581 /* BodyPriceView.swift */; };
 		A372FF522348C3740053B581 /* BodyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF512348C3740053B581 /* BodyHistoryView.swift */; };
 		A372FF542348E05E0053B581 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF532348E05E0053B581 /* Date+Formatter.swift */; };
+		A372FF572348EA610053B581 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF562348EA610053B581 /* ChartView.swift */; };
+		A372FF592348ED910053B581 /* SpinnerBiew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF582348ED910053B581 /* SpinnerBiew.swift */; };
+		A372FF5B2348EF790053B581 /* MainViewController+FooterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF5A2348EF790053B581 /* MainViewController+FooterDelegate.swift */; };
+		A372FF5D2348F04A0053B581 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF5C2348F04A0053B581 /* Service.swift */; };
+		A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF602348F0B60053B581 /* RequestDbService.swift */; };
+		A372FF632348F15C0053B581 /* RequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF622348F15C0053B581 /* RequestEntity.swift */; };
+		A372FF652348F2FC0053B581 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF642348F2FC0053B581 /* CoreDataStack.swift */; };
 		ABF87147A038AC2F46328DAF /* Pods_Bitcoin_price_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +63,13 @@
 		A372FF4F2348C31C0053B581 /* BodyPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPriceView.swift; sourceTree = "<group>"; };
 		A372FF512348C3740053B581 /* BodyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyHistoryView.swift; sourceTree = "<group>"; };
 		A372FF532348E05E0053B581 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		A372FF562348EA610053B581 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		A372FF582348ED910053B581 /* SpinnerBiew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerBiew.swift; sourceTree = "<group>"; };
+		A372FF5A2348EF790053B581 /* MainViewController+FooterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+FooterDelegate.swift"; sourceTree = "<group>"; };
+		A372FF5C2348F04A0053B581 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A372FF602348F0B60053B581 /* RequestDbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDbService.swift; sourceTree = "<group>"; };
+		A372FF622348F15C0053B581 /* RequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEntity.swift; sourceTree = "<group>"; };
+		A372FF642348F2FC0053B581 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcoin_price_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6EDA018A4BAB48EFB3B128 /* Pods-Bitcoin-price-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcoin-price-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +118,7 @@
 		A372FF22234865090053B581 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A372FF552348EA4B0053B581 /* LineChartView */,
 				A372FF492348BF550053B581 /* UIView */,
 			);
 			path = UI;
@@ -142,6 +157,7 @@
 				A372FF2D23486EF30053B581 /* FooterView.swift */,
 				A372FF2F23486F050053B581 /* BodyView.swift */,
 				A372FF38234895D40053B581 /* MainViewController+HeaderDelegate.swift */,
+				A372FF5A2348EF790053B581 /* MainViewController+FooterDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				A372FF36234895290053B581 /* ReferenceType.swift */,
+				A372FF622348F15C0053B581 /* RequestEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +183,9 @@
 		A372FF2A23486E550053B581 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A372FF5F2348F0A40053B581 /* Database */,
+				A372FF5E2348F09F0053B581 /* API */,
+				A372FF5C2348F04A0053B581 /* Service.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -173,12 +193,13 @@
 		A372FF312348934E0053B581 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				A372FF322348936F0053B581 /* UserDefaults+App.swift */,
-				A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */,
-				A372FF3E2348B76E0053B581 /* UIView+Animations.swift */,
-				A372FF472348BC450053B581 /* String+Localized.swift */,
-				A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */,
+				A372FF642348F2FC0053B581 /* CoreDataStack.swift */,
 				A372FF532348E05E0053B581 /* Date+Formatter.swift */,
+				A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */,
+				A372FF472348BC450053B581 /* String+Localized.swift */,
+				A372FF3E2348B76E0053B581 /* UIView+Animations.swift */,
+				A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */,
+				A372FF322348936F0053B581 /* UserDefaults+App.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -204,8 +225,32 @@
 			isa = PBXGroup;
 			children = (
 				A372FF4B2348BF780053B581 /* CardView.swift */,
+				A372FF582348ED910053B581 /* SpinnerBiew.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		A372FF552348EA4B0053B581 /* LineChartView */ = {
+			isa = PBXGroup;
+			children = (
+				A372FF562348EA610053B581 /* ChartView.swift */,
+			);
+			path = LineChartView;
+			sourceTree = "<group>";
+		};
+		A372FF5E2348F09F0053B581 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A372FF5F2348F0A40053B581 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A372FF602348F0B60053B581 /* RequestDbService.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		F29A03F0790A8759E0169413 /* Pods */ = {
@@ -303,10 +348,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -343,11 +390,18 @@
 				A372FEEC234794C60053B581 /* AppDelegate.swift in Sources */,
 				A372FF3023486F050053B581 /* BodyView.swift in Sources */,
 				A372FF39234895D40053B581 /* MainViewController+HeaderDelegate.swift in Sources */,
+				A372FF572348EA610053B581 /* ChartView.swift in Sources */,
 				A372FF542348E05E0053B581 /* Date+Formatter.swift in Sources */,
+				A372FF632348F15C0053B581 /* RequestEntity.swift in Sources */,
+				A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */,
+				A372FF5B2348EF790053B581 /* MainViewController+FooterDelegate.swift in Sources */,
+				A372FF5D2348F04A0053B581 /* Service.swift in Sources */,
 				A372FEEE234794C60053B581 /* SceneDelegate.swift in Sources */,
 				A372FF2E23486EF30053B581 /* FooterView.swift in Sources */,
 				A372FF502348C31C0053B581 /* BodyPriceView.swift in Sources */,
 				A372FF482348BC450053B581 /* String+Localized.swift in Sources */,
+				A372FF652348F2FC0053B581 /* CoreDataStack.swift in Sources */,
+				A372FF592348ED910053B581 /* SpinnerBiew.swift in Sources */,
 				A372FF4C2348BF780053B581 /* CardView.swift in Sources */,
 				A372FF332348936F0053B581 /* UserDefaults+App.swift in Sources */,
 				A372FF522348C3740053B581 /* BodyHistoryView.swift in Sources */,

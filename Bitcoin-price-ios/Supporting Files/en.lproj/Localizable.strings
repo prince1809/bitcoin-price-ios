@@ -6,6 +6,11 @@
   Copyright © 2019 Prince Kumar. All rights reserved.
 */
 
+// MARK: - BodyPriceView
+
+"body_price_view.title" = "Bitcoin Price";
+"body_price_view.date_format" = "yyyy-MM-dd hh:mm a";
+
 // MARK: - ReferenceType
 
 "reference_type.week" = "Week";
