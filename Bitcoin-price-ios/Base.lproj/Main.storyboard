@@ -18,15 +18,15 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Main View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Bitcoin_price_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bitcoin_price_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-Hu-EF5" userLabel="headerView" customClass="HeaderView" customModule="Bitcoin_price_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-Hu-EF5" userLabel="headerView">
                                 <rect key="frame" x="16" y="60" width="382" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd7-GX-YYv" userLabel="titleLabel">
@@ -56,21 +56,21 @@
                                     <constraint firstAttribute="bottom" secondItem="k6G-Np-1yf" secondAttribute="bottom" id="y6j-W1-Mhm"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhj-es-J2V" userLabel="bodyView" customClass="BodyView" customModule="Bitcoin_price_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhj-es-J2V" userLabel="bodyView">
                                 <rect key="frame" x="16" y="104" width="382" height="681"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iD0-qC-DbR" userLabel="priceView">
-                                        <rect key="frame" x="16" y="16" width="350" height="67.5"/>
+                                        <rect key="frame" x="16" y="16" width="350" height="74"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="day, time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiE-j6-5qC" userLabel="updatedLabel">
-                                                <rect key="frame" x="16" y="0.0" width="318" height="16.5"/>
+                                                <rect key="frame" x="16" y="0.0" width="318" height="18"/>
                                                 <color key="tintColor" red="0.0" green="0.7843137255" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="DINPro-Light" family="DINPro" pointSize="14"/>
                                                 <color key="textColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥10,203,829" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mx-Rh-Avl" userLabel="priceLabel">
-                                                <rect key="frame" x="0.0" y="20.5" width="350" height="47"/>
+                                                <rect key="frame" x="0.0" y="22" width="350" height="52"/>
                                                 <color key="tintColor" red="0.0" green="0.7843137255" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="40"/>
                                                 <color key="textColor" red="0.29803921570000003" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,7 +89,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en8-D6-NrT" userLabel="Separator View">
-                                        <rect key="frame" x="16" y="99.5" width="350" height="1"/>
+                                        <rect key="frame" x="16" y="106" width="350" height="1"/>
                                         <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.0" green="0.7843137255" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -97,19 +97,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsD-8x-KZl" userLabel="historyView">
-                                        <rect key="frame" x="16" y="116.5" width="350" height="548.5"/>
+                                        <rect key="frame" x="16" y="123" width="350" height="542"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRE-ky-Wfv" userLabel="leftView">
-                                                <rect key="frame" x="0.0" y="0.0" width="103" height="42.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="47.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXV-gm-x2M" userLabel="titleLabel">
-                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="24"/>
                                                         <fontDescription key="fontDescription" name="DINPro-Light" family="DINPro" pointSize="18"/>
                                                         <color key="textColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kB-yg-oWb" userLabel="referenceLabel">
-                                                        <rect key="frame" x="0.0" y="25" width="103" height="17.5"/>
+                                                        <rect key="frame" x="0.0" y="28" width="102" height="19.5"/>
                                                         <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
                                                         <color key="textColor" red="0.29803921570000003" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -126,11 +126,11 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pST-Jg-NAa" userLabel="chartView">
-                                                <rect key="frame" x="0.0" y="58.5" width="350" height="490"/>
+                                                <rect key="frame" x="0.0" y="63.5" width="350" height="478.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46y-PN-Nq7" userLabel="rightView">
-                                                <rect key="frame" x="312" y="21.5" width="38" height="25"/>
+                                                <rect key="frame" x="314" y="26.5" width="36" height="25"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tuO-ES-wDI" userLabel="indicatorImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -140,7 +140,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEQ-ZF-ftC" userLabel="percentLabel">
-                                                        <rect key="frame" x="25" y="5" width="13" height="15.5"/>
+                                                        <rect key="frame" x="25" y="4" width="11" height="17"/>
                                                         <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -185,7 +185,7 @@
                                     <constraint firstItem="iD0-qC-DbR" firstAttribute="leading" secondItem="Lhj-es-J2V" secondAttribute="leading" constant="16" id="xKt-aA-Pir"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-eh-8cR" userLabel="footerView" customClass="FooterView" customModule="Bitcoin_price_ios" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-eh-8cR" userLabel="footerView">
                                 <rect key="frame" x="16" y="801" width="382" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmA-QO-g9e" userLabel="weakButton">
@@ -257,11 +257,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bodyView" destination="Lhj-es-J2V" id="Lnu-wK-yac"/>
-                        <outlet property="footerView" destination="fcq-eh-8cR" id="tSb-LK-5kN"/>
-                        <outlet property="headerView" destination="eEQ-Hu-EF5" id="zzd-EY-Fhz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
