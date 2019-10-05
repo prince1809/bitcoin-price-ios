@@ -14,11 +14,15 @@ protocol HeaderViewDelegate: class {
 
 class HeaderView: UIView {
     
+    // MARK: - Outlets
+    @IBOutlet private weak var titleLabel: UILabel!
+    
     // MARK: variables
     
     weak var delegate: HeaderViewDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.titleLabel.text = "Bitcoin Price"
     }
 }
