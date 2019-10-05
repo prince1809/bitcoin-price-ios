@@ -16,4 +16,8 @@ extension UIView {
         
         layer.add(animation, forKey: nil)
     }
+    
+    func shimmerAnimation() {
+        
+    }
 }

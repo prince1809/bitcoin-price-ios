@@ -23,6 +23,11 @@
 		A372FF3F2348B76E0053B581 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF3E2348B76E0053B581 /* UIView+Animations.swift */; };
 		A372FF442348BBD40053B581 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A372FF462348BBD40053B581 /* Localizable.strings */; };
 		A372FF482348BC450053B581 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF472348BC450053B581 /* String+Localized.swift */; };
+		A372FF4C2348BF780053B581 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF4B2348BF780053B581 /* CardView.swift */; };
+		A372FF4E2348BFB60053B581 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */; };
+		A372FF502348C31C0053B581 /* BodyPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF4F2348C31C0053B581 /* BodyPriceView.swift */; };
+		A372FF522348C3740053B581 /* BodyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF512348C3740053B581 /* BodyHistoryView.swift */; };
+		A372FF542348E05E0053B581 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF532348E05E0053B581 /* Date+Formatter.swift */; };
 		ABF87147A038AC2F46328DAF /* Pods_Bitcoin_price_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +51,11 @@
 		A372FF3E2348B76E0053B581 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		A372FF452348BBD40053B581 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A372FF472348BC450053B581 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		A372FF4B2348BF780053B581 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		A372FF4F2348C31C0053B581 /* BodyPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPriceView.swift; sourceTree = "<group>"; };
+		A372FF512348C3740053B581 /* BodyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyHistoryView.swift; sourceTree = "<group>"; };
+		A372FF532348E05E0053B581 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 		C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcoin_price_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6EDA018A4BAB48EFB3B128 /* Pods-Bitcoin-price-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcoin-price-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +104,7 @@
 		A372FF22234865090053B581 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A372FF492348BF550053B581 /* UIView */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -138,6 +149,8 @@
 		A372FF2623486C960053B581 /* Body */ = {
 			isa = PBXGroup;
 			children = (
+				A372FF4F2348C31C0053B581 /* BodyPriceView.swift */,
+				A372FF512348C3740053B581 /* BodyHistoryView.swift */,
 			);
 			path = Body;
 			sourceTree = "<group>";
@@ -164,6 +177,8 @@
 				A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */,
 				A372FF3E2348B76E0053B581 /* UIView+Animations.swift */,
 				A372FF472348BC450053B581 /* String+Localized.swift */,
+				A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */,
+				A372FF532348E05E0053B581 /* Date+Formatter.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -183,6 +198,14 @@
 				A372FF462348BBD40053B581 /* Localizable.strings */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A372FF492348BF550053B581 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A372FF4B2348BF780053B581 /* CardView.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		F29A03F0790A8759E0169413 /* Pods */ = {
@@ -315,14 +338,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A372FF4E2348BFB60053B581 /* UIView+Shadow.swift in Sources */,
 				A372FF2823486CF20053B581 /* MainViewController.swift in Sources */,
 				A372FEEC234794C60053B581 /* AppDelegate.swift in Sources */,
 				A372FF3023486F050053B581 /* BodyView.swift in Sources */,
 				A372FF39234895D40053B581 /* MainViewController+HeaderDelegate.swift in Sources */,
+				A372FF542348E05E0053B581 /* Date+Formatter.swift in Sources */,
 				A372FEEE234794C60053B581 /* SceneDelegate.swift in Sources */,
 				A372FF2E23486EF30053B581 /* FooterView.swift in Sources */,
+				A372FF502348C31C0053B581 /* BodyPriceView.swift in Sources */,
 				A372FF482348BC450053B581 /* String+Localized.swift in Sources */,
+				A372FF4C2348BF780053B581 /* CardView.swift in Sources */,
 				A372FF332348936F0053B581 /* UserDefaults+App.swift in Sources */,
+				A372FF522348C3740053B581 /* BodyHistoryView.swift in Sources */,
 				A372FF3B23489F9B0053B581 /* NSObject+ClassName.swift in Sources */,
 				A372FF2C23486EE60053B581 /* HeaderView.swift in Sources */,
 				A372FF37234895290053B581 /* ReferenceType.swift in Sources */,
