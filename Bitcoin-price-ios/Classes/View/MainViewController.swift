@@ -16,6 +16,22 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let ref = UserDefaults.standard.reference()
+        
+        setupVariables()
+        setupViews(reference: ref)
+    }
+    
+    
+    // MARK: Private
+    
+    private func setupVariables() {
+        
+    }
+    
+    private func setupViews(reference: ReferenceType) {
+        headerView.delegate = self
     }
 
 }

@@ -46,7 +46,6 @@
                                         <state key="normal" image="ic_refresh"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="k6G-Np-1yf" firstAttribute="top" secondItem="eEQ-Hu-EF5" secondAttribute="top" id="Hp2-aE-2Sh"/>
                                     <constraint firstItem="fd7-GX-YYv" firstAttribute="centerX" secondItem="eEQ-Hu-EF5" secondAttribute="centerX" id="LsG-AJ-ebu"/>
@@ -271,4 +270,5 @@
     <resources>
         <image name="ic_refresh" width="28" height="28"/>
     </resources>
+    <color key="tintColor" red="0.29803921570000003" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
