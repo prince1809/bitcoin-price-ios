@@ -22,9 +22,9 @@ class RequestEntity: NSManagedObject {
         return NSEntityDescription.entity(forEntityName: RequestEntity.className, in: CoreDataStack.shared.context)!
     }
     
-//    class func fetchRequest() -> NSFetchRequest<RequestEntity> {
-//        return NSFetchRequest<RequestEntity>(entityName: RequestEntity.className)
-//    }
+    class func fetchRequest() -> NSFetchRequest<RequestEntity> {
+        return NSFetchRequest<RequestEntity>(entityName: RequestEntity.className)
+    }
     
     convenience init(reference: String?, data: Data, date: Date) {
         self.init(entity: RequestEntity.fetchEntity(), insertInto: CoreDataStack.shared.context)

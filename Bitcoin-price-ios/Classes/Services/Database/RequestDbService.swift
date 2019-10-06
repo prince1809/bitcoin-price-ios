@@ -17,11 +17,26 @@ class RequestDbService {
         
     }
     
-//    func fetch() -> [RequestEntity]? {
-//        let context = CoreDataStack.shared.context
-//        
-//        return request
-//    }
+    func fetch(reference: ReferenceType?) -> RequestEntity? {
+        let context = CoreDataStack.shared.context
+        var request: RequestEntity?
+        
+        let fetchRequest: NSFetchRequest<RequestEntity> = RequestEntity.fetchRequest()
+        fetchRequest.fetchLimit = 1
+        
+        if let reference = reference {
+            fetchRequest.predicate = NSPredicate(format: "reference = %@", reference.rawValue)
+        } else {
+            fetchRequest.predicate = NSPredicate(format: "reference = nil")
+        }
+        
+        do {
+            request = try context.fetch(fetchRequest).first as RequestEntity?
+        } catch let error {
+            debugPrint("error: \(error)")
+        }
+        return request
+    }
     
     func delete(reference: ReferenceType?) {
         

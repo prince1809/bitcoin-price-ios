@@ -35,6 +35,14 @@
 		A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF602348F0B60053B581 /* RequestDbService.swift */; };
 		A372FF632348F15C0053B581 /* RequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF622348F15C0053B581 /* RequestEntity.swift */; };
 		A372FF652348F2FC0053B581 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF642348F2FC0053B581 /* CoreDataStack.swift */; };
+		A3F1343D2349A439004835CD /* Date+Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1343C2349A439004835CD /* Date+Calc.swift */; };
+		A3F1343F2349A8B0004835CD /* MarketPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1343E2349A8B0004835CD /* MarketPrice.swift */; };
+		A3F134412349A96F004835CD /* MarketPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134402349A96F004835CD /* MarketPriceService.swift */; };
+		A3F134432349A9ED004835CD /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134422349A9ED004835CD /* ApiService.swift */; };
+		A3F134462349B249004835CD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3F134452349B249004835CD /* Settings.bundle */; };
+		A3F134482349D4EB004835CD /* Bundle+InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134472349D4EB004835CD /* Bundle+InfoPlist.swift */; };
+		A3F1344A2349D698004835CD /* MarketPriceApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134492349D698004835CD /* MarketPriceApiService.swift */; };
+		A3F1344C2349D8E8004835CD /* MarketPriceApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1344B2349D8E8004835CD /* MarketPriceApiRouter.swift */; };
 		ABF87147A038AC2F46328DAF /* Pods_Bitcoin_price_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +78,14 @@
 		A372FF602348F0B60053B581 /* RequestDbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDbService.swift; sourceTree = "<group>"; };
 		A372FF622348F15C0053B581 /* RequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEntity.swift; sourceTree = "<group>"; };
 		A372FF642348F2FC0053B581 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A3F1343C2349A439004835CD /* Date+Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Calc.swift"; sourceTree = "<group>"; };
+		A3F1343E2349A8B0004835CD /* MarketPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPrice.swift; sourceTree = "<group>"; };
+		A3F134402349A96F004835CD /* MarketPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceService.swift; sourceTree = "<group>"; };
+		A3F134422349A9ED004835CD /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		A3F134452349B249004835CD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		A3F134472349D4EB004835CD /* Bundle+InfoPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+InfoPlist.swift"; sourceTree = "<group>"; };
+		A3F134492349D698004835CD /* MarketPriceApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiService.swift; sourceTree = "<group>"; };
+		A3F1344B2349D8E8004835CD /* MarketPriceApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiRouter.swift; sourceTree = "<group>"; };
 		C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcoin_price_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6EDA018A4BAB48EFB3B128 /* Pods-Bitcoin-price-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcoin-price-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,9 +123,10 @@
 		A372FEEA234794C60053B581 /* Bitcoin-price-ios */ = {
 			isa = PBXGroup;
 			children = (
-				A372FEF4234794C70053B581 /* Assets.xcassets */,
 				A372FEF9234794C70053B581 /* Info.plist */,
+				A372FEF4234794C70053B581 /* Assets.xcassets */,
 				A372FF2323486C6A0053B581 /* Classes */,
+				A3F134442349B22B004835CD /* Resources */,
 				A372FF412348BBA90053B581 /* Supporting Files */,
 			);
 			path = "Bitcoin-price-ios";
@@ -176,6 +193,7 @@
 			children = (
 				A372FF36234895290053B581 /* ReferenceType.swift */,
 				A372FF622348F15C0053B581 /* RequestEntity.swift */,
+				A3F1343E2349A8B0004835CD /* MarketPrice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,9 +201,10 @@
 		A372FF2A23486E550053B581 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A372FF5F2348F0A40053B581 /* Database */,
-				A372FF5E2348F09F0053B581 /* API */,
 				A372FF5C2348F04A0053B581 /* Service.swift */,
+				A3F134402349A96F004835CD /* MarketPriceService.swift */,
+				A372FF5E2348F09F0053B581 /* API */,
+				A372FF5F2348F0A40053B581 /* Database */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -200,6 +219,8 @@
 				A372FF3E2348B76E0053B581 /* UIView+Animations.swift */,
 				A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */,
 				A372FF322348936F0053B581 /* UserDefaults+App.swift */,
+				A3F1343C2349A439004835CD /* Date+Calc.swift */,
+				A3F134472349D4EB004835CD /* Bundle+InfoPlist.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -241,6 +262,9 @@
 		A372FF5E2348F09F0053B581 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				A3F134422349A9ED004835CD /* ApiService.swift */,
+				A3F134492349D698004835CD /* MarketPriceApiService.swift */,
+				A3F1344B2349D8E8004835CD /* MarketPriceApiRouter.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -251,6 +275,14 @@
 				A372FF602348F0B60053B581 /* RequestDbService.swift */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		A3F134442349B22B004835CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3F134452349B249004835CD /* Settings.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F29A03F0790A8759E0169413 /* Pods */ = {
@@ -332,6 +364,7 @@
 			files = (
 				A372FEF8234794C70053B581 /* LaunchScreen.storyboard in Resources */,
 				A372FF442348BBD40053B581 /* Localizable.strings in Resources */,
+				A3F134462349B249004835CD /* Settings.bundle in Resources */,
 				A372FEF5234794C70053B581 /* Assets.xcassets in Resources */,
 				A372FEF3234794C60053B581 /* Main.storyboard in Resources */,
 			);
@@ -396,19 +429,26 @@
 				A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */,
 				A372FF5B2348EF790053B581 /* MainViewController+FooterDelegate.swift in Sources */,
 				A372FF5D2348F04A0053B581 /* Service.swift in Sources */,
+				A3F1343F2349A8B0004835CD /* MarketPrice.swift in Sources */,
 				A372FEEE234794C60053B581 /* SceneDelegate.swift in Sources */,
 				A372FF2E23486EF30053B581 /* FooterView.swift in Sources */,
 				A372FF502348C31C0053B581 /* BodyPriceView.swift in Sources */,
 				A372FF482348BC450053B581 /* String+Localized.swift in Sources */,
 				A372FF652348F2FC0053B581 /* CoreDataStack.swift in Sources */,
 				A372FF592348ED910053B581 /* SpinnerBiew.swift in Sources */,
+				A3F134412349A96F004835CD /* MarketPriceService.swift in Sources */,
 				A372FF4C2348BF780053B581 /* CardView.swift in Sources */,
 				A372FF332348936F0053B581 /* UserDefaults+App.swift in Sources */,
 				A372FF522348C3740053B581 /* BodyHistoryView.swift in Sources */,
+				A3F1344C2349D8E8004835CD /* MarketPriceApiRouter.swift in Sources */,
 				A372FF3B23489F9B0053B581 /* NSObject+ClassName.swift in Sources */,
 				A372FF2C23486EE60053B581 /* HeaderView.swift in Sources */,
+				A3F1344A2349D698004835CD /* MarketPriceApiService.swift in Sources */,
 				A372FF37234895290053B581 /* ReferenceType.swift in Sources */,
 				A372FF3F2348B76E0053B581 /* UIView+Animations.swift in Sources */,
+				A3F134432349A9ED004835CD /* ApiService.swift in Sources */,
+				A3F1343D2349A439004835CD /* Date+Calc.swift in Sources */,
+				A3F134482349D4EB004835CD /* Bundle+InfoPlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "https://api.blockchain.info";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -506,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "https://api.blockchain.info";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
