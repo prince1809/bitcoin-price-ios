@@ -47,6 +47,8 @@
 		A3F134502349E2D1004835CD /* Date+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1344F2349E2D1004835CD /* Date+Diff.swift */; };
 		A3F134532349EB05004835CD /* BitPrice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3F134512349EB05004835CD /* BitPrice.xcdatamodeld */; };
 		A3F134552349EC74004835CD /* MainViewController+ServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134542349EC74004835CD /* MainViewController+ServiceDelegate.swift */; };
+		A3F13458234A32A8004835CD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F13457234A32A8004835CD /* Button.swift */; };
+		A3F1345A234A333C004835CD /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F13459234A333C004835CD /* UIColor+App.swift */; };
 		ABF87147A038AC2F46328DAF /* Pods_Bitcoin_price_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 		A3F1344F2349E2D1004835CD /* Date+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Diff.swift"; sourceTree = "<group>"; };
 		A3F134522349EB05004835CD /* BitPrice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitPrice.xcdatamodel; sourceTree = "<group>"; };
 		A3F134542349EC74004835CD /* MainViewController+ServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ServiceDelegate.swift"; sourceTree = "<group>"; };
+		A3F13457234A32A8004835CD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		A3F13459234A333C004835CD /* UIColor+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
 		C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcoin_price_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6EDA018A4BAB48EFB3B128 /* Pods-Bitcoin-price-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcoin-price-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +147,7 @@
 		A372FF22234865090053B581 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A3F13456234A3295004835CD /* UIButton */,
 				A372FF552348EA4B0053B581 /* LineChartView */,
 				A372FF492348BF550053B581 /* UIView */,
 			);
@@ -232,6 +237,7 @@
 				A372FF3E2348B76E0053B581 /* UIView+Animations.swift */,
 				A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */,
 				A372FF322348936F0053B581 /* UserDefaults+App.swift */,
+				A3F13459234A333C004835CD /* UIColor+App.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -295,6 +301,14 @@
 				A3F134512349EB05004835CD /* BitPrice.xcdatamodeld */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3F13456234A3295004835CD /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				A3F13457234A32A8004835CD /* Button.swift */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		F29A03F0790A8759E0169413 /* Pods */ = {
@@ -430,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F1345A234A333C004835CD /* UIColor+App.swift in Sources */,
 				A372FF4E2348BFB60053B581 /* UIView+Shadow.swift in Sources */,
 				A372FF2823486CF20053B581 /* MainViewController.swift in Sources */,
 				A372FEEC234794C60053B581 /* AppDelegate.swift in Sources */,
@@ -437,6 +452,7 @@
 				A372FF39234895D40053B581 /* MainViewController+HeaderDelegate.swift in Sources */,
 				A372FF572348EA610053B581 /* ChartView.swift in Sources */,
 				A372FF542348E05E0053B581 /* Date+Formatter.swift in Sources */,
+				A3F13458234A32A8004835CD /* Button.swift in Sources */,
 				A372FF632348F15C0053B581 /* RequestEntity.swift in Sources */,
 				A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */,
 				A3F134552349EC74004835CD /* MainViewController+ServiceDelegate.swift in Sources */,

@@ -52,13 +52,13 @@ class MainViewController: UIViewController {
     // MARK: Private
     
     private func setupVariables() {
-       // marketPriceService.delegate = self
+       marketPriceService.delegate = self
     }
     
     private func setupViews(reference: ReferenceType) {
         headerView.delegate = self
         footerView.delegate = self
-        //footerView.setRefe
+        //footerView.setRefer
     }
 
 }
