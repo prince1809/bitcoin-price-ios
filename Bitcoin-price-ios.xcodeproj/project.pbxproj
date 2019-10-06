@@ -49,6 +49,8 @@
 		A3F134552349EC74004835CD /* MainViewController+ServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134542349EC74004835CD /* MainViewController+ServiceDelegate.swift */; };
 		A3F13458234A32A8004835CD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F13457234A32A8004835CD /* Button.swift */; };
 		A3F1345A234A333C004835CD /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F13459234A333C004835CD /* UIColor+App.swift */; };
+		A3F1345C234A455F004835CD /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1345B234A455F004835CD /* UIFont+App.swift */; };
+		A3F13460234A4782004835CD /* Float+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1345F234A4782004835CD /* Float+Formatter.swift */; };
 		ABF87147A038AC2F46328DAF /* Pods_Bitcoin_price_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,8 @@
 		A3F134542349EC74004835CD /* MainViewController+ServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ServiceDelegate.swift"; sourceTree = "<group>"; };
 		A3F13457234A32A8004835CD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		A3F13459234A333C004835CD /* UIColor+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
+		A3F1345B234A455F004835CD /* UIFont+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
+		A3F1345F234A4782004835CD /* Float+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Formatter.swift"; sourceTree = "<group>"; };
 		C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcoin_price_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6EDA018A4BAB48EFB3B128 /* Pods-Bitcoin-price-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcoin-price-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,6 +242,8 @@
 				A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */,
 				A372FF322348936F0053B581 /* UserDefaults+App.swift */,
 				A3F13459234A333C004835CD /* UIColor+App.swift */,
+				A3F1345B234A455F004835CD /* UIFont+App.swift */,
+				A3F1345F234A4782004835CD /* Float+Formatter.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -456,6 +462,7 @@
 				A372FF632348F15C0053B581 /* RequestEntity.swift in Sources */,
 				A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */,
 				A3F134552349EC74004835CD /* MainViewController+ServiceDelegate.swift in Sources */,
+				A3F13460234A4782004835CD /* Float+Formatter.swift in Sources */,
 				A372FF5B2348EF790053B581 /* MainViewController+FooterDelegate.swift in Sources */,
 				A3F134502349E2D1004835CD /* Date+Diff.swift in Sources */,
 				A372FF5D2348F04A0053B581 /* Service.swift in Sources */,
@@ -468,6 +475,7 @@
 				A372FF592348ED910053B581 /* SpinnerBiew.swift in Sources */,
 				A3F134412349A96F004835CD /* MarketPriceService.swift in Sources */,
 				A372FF4C2348BF780053B581 /* CardView.swift in Sources */,
+				A3F1345C234A455F004835CD /* UIFont+App.swift in Sources */,
 				A372FF332348936F0053B581 /* UserDefaults+App.swift in Sources */,
 				A372FF522348C3740053B581 /* BodyHistoryView.swift in Sources */,
 				A3F1344C2349D8E8004835CD /* MarketPriceApiRouter.swift in Sources */,

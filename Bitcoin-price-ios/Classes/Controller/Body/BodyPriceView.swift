@@ -17,6 +17,7 @@ class BodyPriceView: UIView {
     
     // MARK: - Variables
     
+    var spinnerView = SpinnerView()
     
     // MARK: - UIView
     

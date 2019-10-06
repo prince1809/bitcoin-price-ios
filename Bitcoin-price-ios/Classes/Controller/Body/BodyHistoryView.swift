@@ -44,11 +44,28 @@ class BodyHistoryView: UIView {
     }
     
     func setPrices(firstPrice: Float, lastPrice: Float) {
+        let diff = (lastPrice - firstPrice)
+        let color: UIColor
+        let imageName: String?
         
+        if diff == 0 {
+            color = UIColor.App.darkGray
+            imageName = nil
+        } else if diff > 0 {
+            color = UIColor.App.green
+            imageName = "ic_arrow_drop_up"
+        } else {
+            color = UIColor.App.red
+            imageName = "ic_arrow_drop_down"
+        }
+        
+        setIndicatorImage(imageName: imageName)
+        setPercent(firstPrice: firstPrice, lastPrice: lastPrice, color: color)
     }
     
     func setChartData(reference: ReferenceType, values: [ChartDataEntry]) {
-        
+        self.referenceLabel.text = reference.rawValue.localized
+        //chartView.setData
     }
     
     // MARK: - Private

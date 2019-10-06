@@ -11,6 +11,7 @@ import UIKit
 extension MainViewController: HeaderViewDelegate {
     
     func headerViewRefreshDidSelect() {
-        
+        let ref = UserDefaults.standard.reference()
+        callMarketPriceService(reference: ref)
     }
 }

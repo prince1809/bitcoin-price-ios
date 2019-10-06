@@ -14,10 +14,16 @@ extension UIView {
     func heartAnimation() {
         let animation = CABasicAnimation(keyPath: "transform.scale")
         
+        animation.fromValue = NSValue(cgSize: CGSize(width: 1, height: 1))
+        animation.toValue = NSValue(cgSize: CGSize(width: 1.5, height: 1.5))
+        animation.autoreverses = true
+        animation.duration = 0.1
+        animation.beginTime = 0
+        
         layer.add(animation, forKey: nil)
     }
     
     func shimmerAnimation() {
-        
+        print("Shimmer animation.........")
     }
 }
