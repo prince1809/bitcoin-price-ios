@@ -12,6 +12,6 @@ import Foundation
 extension Bundle {
     
     func apiBaseUrl() -> String {
-        return object(forInfoDictionaryKey: "apiBaseUrl") as? String ?? ""
+        return object(forInfoDictionaryKey: "ApiBaseUrl") as? String ?? ""
     }
 }

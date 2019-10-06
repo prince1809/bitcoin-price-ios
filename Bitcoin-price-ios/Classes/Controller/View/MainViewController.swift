@@ -29,9 +29,16 @@ class MainViewController: UIViewController {
         
         setupVariables()
         setupViews(reference: ref)
+        
+        callTickerService()
+        callMarketPriceService(reference: ref)
     }
     
     // MARK: - Public
+    
+    func callTickerService() {
+        
+    }
     
     func callMarketPriceService(reference: ReferenceType) {
         marketPriceService.get(reference: reference)
@@ -45,7 +52,7 @@ class MainViewController: UIViewController {
     // MARK: Private
     
     private func setupVariables() {
-        
+       // marketPriceService.delegate = self
     }
     
     private func setupViews(reference: ReferenceType) {

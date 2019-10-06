@@ -45,6 +45,8 @@
 		A3F1344C2349D8E8004835CD /* MarketPriceApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1344B2349D8E8004835CD /* MarketPriceApiRouter.swift */; };
 		A3F1344E2349E250004835CD /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1344D2349E250004835CD /* Date+Components.swift */; };
 		A3F134502349E2D1004835CD /* Date+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1344F2349E2D1004835CD /* Date+Diff.swift */; };
+		A3F134532349EB05004835CD /* BitPrice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3F134512349EB05004835CD /* BitPrice.xcdatamodeld */; };
+		A3F134552349EC74004835CD /* MainViewController+ServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134542349EC74004835CD /* MainViewController+ServiceDelegate.swift */; };
 		ABF87147A038AC2F46328DAF /* Pods_Bitcoin_price_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,8 @@
 		A3F1344B2349D8E8004835CD /* MarketPriceApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiRouter.swift; sourceTree = "<group>"; };
 		A3F1344D2349E250004835CD /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
 		A3F1344F2349E2D1004835CD /* Date+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Diff.swift"; sourceTree = "<group>"; };
+		A3F134522349EB05004835CD /* BitPrice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitPrice.xcdatamodel; sourceTree = "<group>"; };
+		A3F134542349EC74004835CD /* MainViewController+ServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ServiceDelegate.swift"; sourceTree = "<group>"; };
 		C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcoin_price_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6EDA018A4BAB48EFB3B128 /* Pods-Bitcoin-price-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcoin-price-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +183,7 @@
 				A372FF2F23486F050053B581 /* BodyView.swift */,
 				A372FF38234895D40053B581 /* MainViewController+HeaderDelegate.swift */,
 				A372FF5A2348EF790053B581 /* MainViewController+FooterDelegate.swift */,
+				A3F134542349EC74004835CD /* MainViewController+ServiceDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				A3F134452349B249004835CD /* Settings.bundle */,
+				A3F134512349EB05004835CD /* BitPrice.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 				A372FF542348E05E0053B581 /* Date+Formatter.swift in Sources */,
 				A372FF632348F15C0053B581 /* RequestEntity.swift in Sources */,
 				A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */,
+				A3F134552349EC74004835CD /* MainViewController+ServiceDelegate.swift in Sources */,
 				A372FF5B2348EF790053B581 /* MainViewController+FooterDelegate.swift in Sources */,
 				A3F134502349E2D1004835CD /* Date+Diff.swift in Sources */,
 				A372FF5D2348F04A0053B581 /* Service.swift in Sources */,
@@ -449,6 +456,7 @@
 				A372FF522348C3740053B581 /* BodyHistoryView.swift in Sources */,
 				A3F1344C2349D8E8004835CD /* MarketPriceApiRouter.swift in Sources */,
 				A372FF3B23489F9B0053B581 /* NSObject+ClassName.swift in Sources */,
+				A3F134532349EB05004835CD /* BitPrice.xcdatamodeld in Sources */,
 				A372FF2C23486EE60053B581 /* HeaderView.swift in Sources */,
 				A3F1344A2349D698004835CD /* MarketPriceApiService.swift in Sources */,
 				A372FF37234895290053B581 /* ReferenceType.swift in Sources */,
@@ -664,6 +672,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3F134512349EB05004835CD /* BitPrice.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3F134522349EB05004835CD /* BitPrice.xcdatamodel */,
+			);
+			currentVersion = A3F134522349EB05004835CD /* BitPrice.xcdatamodel */;
+			path = BitPrice.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A372FEE0234794C60053B581 /* Project object */;
 }
