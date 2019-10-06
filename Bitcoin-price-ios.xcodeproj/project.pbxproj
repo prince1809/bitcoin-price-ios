@@ -43,6 +43,8 @@
 		A3F134482349D4EB004835CD /* Bundle+InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134472349D4EB004835CD /* Bundle+InfoPlist.swift */; };
 		A3F1344A2349D698004835CD /* MarketPriceApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134492349D698004835CD /* MarketPriceApiService.swift */; };
 		A3F1344C2349D8E8004835CD /* MarketPriceApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1344B2349D8E8004835CD /* MarketPriceApiRouter.swift */; };
+		A3F1344E2349E250004835CD /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1344D2349E250004835CD /* Date+Components.swift */; };
+		A3F134502349E2D1004835CD /* Date+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1344F2349E2D1004835CD /* Date+Diff.swift */; };
 		ABF87147A038AC2F46328DAF /* Pods_Bitcoin_price_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,8 @@
 		A3F134472349D4EB004835CD /* Bundle+InfoPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+InfoPlist.swift"; sourceTree = "<group>"; };
 		A3F134492349D698004835CD /* MarketPriceApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiService.swift; sourceTree = "<group>"; };
 		A3F1344B2349D8E8004835CD /* MarketPriceApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiRouter.swift; sourceTree = "<group>"; };
+		A3F1344D2349E250004835CD /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
+		A3F1344F2349E2D1004835CD /* Date+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Diff.swift"; sourceTree = "<group>"; };
 		C3A782EFF7EC34F4D8EDC47F /* Pods_Bitcoin_price_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitcoin_price_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6EDA018A4BAB48EFB3B128 /* Pods-Bitcoin-price-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitcoin-price-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,15 +216,17 @@
 		A372FF312348934E0053B581 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				A3F134472349D4EB004835CD /* Bundle+InfoPlist.swift */,
 				A372FF642348F2FC0053B581 /* CoreDataStack.swift */,
+				A3F1343C2349A439004835CD /* Date+Calc.swift */,
+				A3F1344D2349E250004835CD /* Date+Components.swift */,
+				A3F1344F2349E2D1004835CD /* Date+Diff.swift */,
 				A372FF532348E05E0053B581 /* Date+Formatter.swift */,
 				A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */,
 				A372FF472348BC450053B581 /* String+Localized.swift */,
 				A372FF3E2348B76E0053B581 /* UIView+Animations.swift */,
 				A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */,
 				A372FF322348936F0053B581 /* UserDefaults+App.swift */,
-				A3F1343C2349A439004835CD /* Date+Calc.swift */,
-				A3F134472349D4EB004835CD /* Bundle+InfoPlist.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -428,6 +434,7 @@
 				A372FF632348F15C0053B581 /* RequestEntity.swift in Sources */,
 				A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */,
 				A372FF5B2348EF790053B581 /* MainViewController+FooterDelegate.swift in Sources */,
+				A3F134502349E2D1004835CD /* Date+Diff.swift in Sources */,
 				A372FF5D2348F04A0053B581 /* Service.swift in Sources */,
 				A3F1343F2349A8B0004835CD /* MarketPrice.swift in Sources */,
 				A372FEEE234794C60053B581 /* SceneDelegate.swift in Sources */,
@@ -449,6 +456,7 @@
 				A3F134432349A9ED004835CD /* ApiService.swift in Sources */,
 				A3F1343D2349A439004835CD /* Date+Calc.swift in Sources */,
 				A3F134482349D4EB004835CD /* Bundle+InfoPlist.swift in Sources */,
+				A3F1344E2349E250004835CD /* Date+Components.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

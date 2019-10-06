@@ -10,9 +10,17 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    // MARK: - Outlet
+    
     @IBOutlet private weak var headerView: HeaderView!
     @IBOutlet weak var bodyView: BodyView!
     @IBOutlet private weak var footerView: FooterView!
+    
+    // MARK: - Variable
+    
+    private let marketPriceService = MarketPriceService()
+    
+    // MARK: - UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +29,16 @@ class MainViewController: UIViewController {
         
         setupVariables()
         setupViews(reference: ref)
+    }
+    
+    // MARK: - Public
+    
+    func callMarketPriceService(reference: ReferenceType) {
+        marketPriceService.get(reference: reference)
+        
+        if let historyView = bodyView.historyView {
+            historyView.spinnerView.show(onView: historyView)
+        }
     }
     
     
