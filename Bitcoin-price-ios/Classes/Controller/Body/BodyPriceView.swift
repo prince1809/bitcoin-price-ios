@@ -30,7 +30,7 @@ class BodyPriceView: UIView {
     // MARK: - Public
     
     func setPrice(_ price: Float, date: Date? = nil) {
-        self.priceLabel.text = "\(price)"
+        self.priceLabel.text = price.toCurrencyString()
         self.priceLabel.shimmerAnimation()
         
         if let date = date {

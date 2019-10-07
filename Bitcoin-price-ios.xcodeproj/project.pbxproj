@@ -35,6 +35,10 @@
 		A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF602348F0B60053B581 /* RequestDbService.swift */; };
 		A372FF632348F15C0053B581 /* RequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF622348F15C0053B581 /* RequestEntity.swift */; };
 		A372FF652348F2FC0053B581 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372FF642348F2FC0053B581 /* CoreDataStack.swift */; };
+		A39D4FE0234B8950009E7758 /* TickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D4FDF234B8950009E7758 /* TickerService.swift */; };
+		A39D4FE2234B8A12009E7758 /* TickerApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D4FE1234B8A12009E7758 /* TickerApiRouter.swift */; };
+		A39D4FE4234B8BC8009E7758 /* TickerApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D4FE3234B8BC8009E7758 /* TickerApiService.swift */; };
+		A39D4FE6234B9727009E7758 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D4FE5234B9727009E7758 /* Ticker.swift */; };
 		A3F1343D2349A439004835CD /* Date+Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1343C2349A439004835CD /* Date+Calc.swift */; };
 		A3F1343F2349A8B0004835CD /* MarketPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1343E2349A8B0004835CD /* MarketPrice.swift */; };
 		A3F134412349A96F004835CD /* MarketPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134402349A96F004835CD /* MarketPriceService.swift */; };
@@ -86,6 +90,10 @@
 		A372FF602348F0B60053B581 /* RequestDbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDbService.swift; sourceTree = "<group>"; };
 		A372FF622348F15C0053B581 /* RequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEntity.swift; sourceTree = "<group>"; };
 		A372FF642348F2FC0053B581 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A39D4FDF234B8950009E7758 /* TickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerService.swift; sourceTree = "<group>"; };
+		A39D4FE1234B8A12009E7758 /* TickerApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerApiRouter.swift; sourceTree = "<group>"; };
+		A39D4FE3234B8BC8009E7758 /* TickerApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerApiService.swift; sourceTree = "<group>"; };
+		A39D4FE5234B9727009E7758 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		A3F1343C2349A439004835CD /* Date+Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Calc.swift"; sourceTree = "<group>"; };
 		A3F1343E2349A8B0004835CD /* MarketPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPrice.swift; sourceTree = "<group>"; };
 		A3F134402349A96F004835CD /* MarketPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceService.swift; sourceTree = "<group>"; };
@@ -212,6 +220,7 @@
 				A372FF36234895290053B581 /* ReferenceType.swift */,
 				A372FF622348F15C0053B581 /* RequestEntity.swift */,
 				A3F1343E2349A8B0004835CD /* MarketPrice.swift */,
+				A39D4FE5234B9727009E7758 /* Ticker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +230,7 @@
 			children = (
 				A372FF5C2348F04A0053B581 /* Service.swift */,
 				A3F134402349A96F004835CD /* MarketPriceService.swift */,
+				A39D4FDF234B8950009E7758 /* TickerService.swift */,
 				A372FF5E2348F09F0053B581 /* API */,
 				A372FF5F2348F0A40053B581 /* Database */,
 			);
@@ -236,14 +246,14 @@
 				A3F1344D2349E250004835CD /* Date+Components.swift */,
 				A3F1344F2349E2D1004835CD /* Date+Diff.swift */,
 				A372FF532348E05E0053B581 /* Date+Formatter.swift */,
+				A3F1345F234A4782004835CD /* Float+Formatter.swift */,
 				A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */,
 				A372FF472348BC450053B581 /* String+Localized.swift */,
+				A3F13459234A333C004835CD /* UIColor+App.swift */,
+				A3F1345B234A455F004835CD /* UIFont+App.swift */,
 				A372FF3E2348B76E0053B581 /* UIView+Animations.swift */,
 				A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */,
 				A372FF322348936F0053B581 /* UserDefaults+App.swift */,
-				A3F13459234A333C004835CD /* UIColor+App.swift */,
-				A3F1345B234A455F004835CD /* UIFont+App.swift */,
-				A3F1345F234A4782004835CD /* Float+Formatter.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -288,6 +298,8 @@
 				A3F134422349A9ED004835CD /* ApiService.swift */,
 				A3F134492349D698004835CD /* MarketPriceApiService.swift */,
 				A3F1344B2349D8E8004835CD /* MarketPriceApiRouter.swift */,
+				A39D4FE1234B8A12009E7758 /* TickerApiRouter.swift */,
+				A39D4FE3234B8BC8009E7758 /* TickerApiService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -459,12 +471,14 @@
 				A372FF572348EA610053B581 /* ChartView.swift in Sources */,
 				A372FF542348E05E0053B581 /* Date+Formatter.swift in Sources */,
 				A3F13458234A32A8004835CD /* Button.swift in Sources */,
+				A39D4FE0234B8950009E7758 /* TickerService.swift in Sources */,
 				A372FF632348F15C0053B581 /* RequestEntity.swift in Sources */,
 				A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */,
 				A3F134552349EC74004835CD /* MainViewController+ServiceDelegate.swift in Sources */,
 				A3F13460234A4782004835CD /* Float+Formatter.swift in Sources */,
 				A372FF5B2348EF790053B581 /* MainViewController+FooterDelegate.swift in Sources */,
 				A3F134502349E2D1004835CD /* Date+Diff.swift in Sources */,
+				A39D4FE6234B9727009E7758 /* Ticker.swift in Sources */,
 				A372FF5D2348F04A0053B581 /* Service.swift in Sources */,
 				A3F1343F2349A8B0004835CD /* MarketPrice.swift in Sources */,
 				A372FEEE234794C60053B581 /* SceneDelegate.swift in Sources */,
@@ -482,9 +496,11 @@
 				A372FF3B23489F9B0053B581 /* NSObject+ClassName.swift in Sources */,
 				A3F134532349EB05004835CD /* BitPrice.xcdatamodeld in Sources */,
 				A372FF2C23486EE60053B581 /* HeaderView.swift in Sources */,
+				A39D4FE4234B8BC8009E7758 /* TickerApiService.swift in Sources */,
 				A3F1344A2349D698004835CD /* MarketPriceApiService.swift in Sources */,
 				A372FF37234895290053B581 /* ReferenceType.swift in Sources */,
 				A372FF3F2348B76E0053B581 /* UIView+Animations.swift in Sources */,
+				A39D4FE2234B8A12009E7758 /* TickerApiRouter.swift in Sources */,
 				A3F134432349A9ED004835CD /* ApiService.swift in Sources */,
 				A3F1343D2349A439004835CD /* Date+Calc.swift in Sources */,
 				A3F134482349D4EB004835CD /* Bundle+InfoPlist.swift in Sources */,

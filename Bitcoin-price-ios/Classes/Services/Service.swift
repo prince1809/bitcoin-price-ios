@@ -38,6 +38,10 @@ class Service<T: Decodable> {
         
         return nil
     }
+    
+    func dbInsert(reference: ReferenceType? = nil, data: Data, date: Date = Date()) {
+        dbService.insert(reference: reference, data: data, date: date)
+    }
 }
 
 enum ServiceFailureType {

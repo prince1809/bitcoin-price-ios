@@ -9,6 +9,30 @@
 import Charts
 import UIKit
 
+extension MainViewController: TickerServiceDelegate {
+    
+    func tickerGetDidComplete(ticker: Ticker, date: Date, fromCache: Bool) {
+        bodyView.priceView.setPrice(ticker.USD.last, date: date)
+        bodyView.priceView.spinnerView.hide()
+        
+        if fromCache {
+            print("from cache")
+        }
+    }
+    
+    func tickerGetDidComplete(failure: ServiceFailureType) {
+        bodyView.priceView.setPrice(0)
+        bodyView.priceView.spinnerView.hide()
+        
+        switch failure {
+        case .server:
+            print("Server")
+        case .connection:
+            print("connection error")
+        }
+    }
+}
+
 extension MainViewController: MarketPriceServiceDelegate {
     
     

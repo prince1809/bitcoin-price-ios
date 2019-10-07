@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
     // MARK: - Variable
     
     private let marketPriceService = MarketPriceService()
+    private let tickerService = TickerService()
     
     // MARK: - UIViewController
     
@@ -37,7 +38,11 @@ class MainViewController: UIViewController {
     // MARK: - Public
     
     func callTickerService() {
+        tickerService.get()
         
+        if let priceView = bodyView.priceView {
+            priceView.spinnerView.show(onView: priceView)
+        }
     }
     
     func callMarketPriceService(reference: ReferenceType) {
@@ -52,13 +57,14 @@ class MainViewController: UIViewController {
     // MARK: Private
     
     private func setupVariables() {
+        tickerService.delegate = self
        marketPriceService.delegate = self
     }
     
     private func setupViews(reference: ReferenceType) {
         headerView.delegate = self
         footerView.delegate = self
-        //footerView.setRefer
+        footerView.setReference(reference)
     }
 
 }

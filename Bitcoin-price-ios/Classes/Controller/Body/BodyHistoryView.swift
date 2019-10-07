@@ -65,17 +65,21 @@ class BodyHistoryView: UIView {
     
     func setChartData(reference: ReferenceType, values: [ChartDataEntry]) {
         self.referenceLabel.text = reference.rawValue.localized
-        //chartView.setData
+        chartView.setData(values: values)
     }
     
     // MARK: - Private
     
     private func setIndicatorImage(imageName: String?) {
-        
+        if let imageName = imageName {
+            self.indicatorImageView.image = UIImage(named: imageName)
+        }
     }
     
     private func setPercent(firstPrice: Float, lastPrice: Float, color: UIColor) {
-        
+        let percent = abs(1 - (lastPrice / firstPrice))
+        self.percentLabel.text = percent.toPercentString()
+        self.percentLabel.textColor = color
     }
     
 }
