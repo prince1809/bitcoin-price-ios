@@ -7,6 +7,7 @@
 //
 
 import Charts
+import NotificationBannerSwift
 import UIKit
 
 extension MainViewController: TickerServiceDelegate {
@@ -16,7 +17,7 @@ extension MainViewController: TickerServiceDelegate {
         bodyView.priceView.spinnerView.hide()
         
         if fromCache {
-            print("from cache")
+            StatusBarNotificationBanner.noConnection.show()
         }
     }
     
@@ -26,9 +27,9 @@ extension MainViewController: TickerServiceDelegate {
         
         switch failure {
         case .server:
-            print("Server")
+            StatusBarNotificationBanner.serverFailure.show()
         case .connection:
-            print("connection error")
+            StatusBarNotificationBanner.noConnection.show()
         }
     }
 }
@@ -57,6 +58,7 @@ extension MainViewController: MarketPriceServiceDelegate {
     }
     
     func marketPriceGetDidComplete(failure: ServiceFailureType) {
-        
+        bodyView.historyView.setLoaded(true)
+        bodyView.historyView.spinnerView.hide()
     }
 }

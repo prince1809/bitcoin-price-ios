@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13D1E22CFE04F0F693BA7FDB3AF2D36E"
+               BlueprintIdentifier = "59853ADAF71AD516438E24ADAB147D29"
                BuildableName = "Pods_Bitcoin_price_ios.framework"
                BlueprintName = "Pods-Bitcoin-price-ios"
                ReferencedContainer = "container:Pods.xcodeproj">

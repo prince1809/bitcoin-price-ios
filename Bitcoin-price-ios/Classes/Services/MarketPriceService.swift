@@ -44,7 +44,7 @@ class MarketPriceService: Service<MarketPrice> {
         DispatchQueue.main.async {
             if let marketPrice = self.jsonDecode(data: data) {
                 self.delegate?.marketPriceGetDidComplete(marketPrice: marketPrice)
-                //self.doIn
+                self.dbInsert(reference: reference, data: data)
             } else {
                 self.delegate?.marketPriceGetDidComplete(failure: .server)
             }

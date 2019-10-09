@@ -53,14 +53,14 @@ class ChartView: LineChartView {
     }
     
     private func setupNoData() {
-       // noDataFont = UIFont.appFont(ofSize: 20)
+        noDataFont = UIFont.appFont(ofSize: 20)
         noDataTextColor = UIColor.App.black
         noDataText = "chart_view.no_data".localized
     }
     
     private func setupLeftAxis() {
         setupAxis(leftAxis)
-        //leftAxis.labelFont =
+        leftAxis.labelFont = UIFont.appFont(ofSize: 10)
         leftAxis.valueFormatter = DefaultAxisValueFormatter.with(block: { value, _ -> String in
             return Float(value).toCurrencyString(fractionDigits: 0)
         })
@@ -69,6 +69,7 @@ class ChartView: LineChartView {
     private func setupXAxis() {
         setupAxis(xAxis)
         xAxis.labelPosition = .bottom
+        xAxis.labelFont = UIFont.appFont(ofSize: 9)
         
         xAxis.valueFormatter = DefaultAxisValueFormatter.with(block: { value, _ -> String in
             let dateFormat = "chart_view.date_format".localized

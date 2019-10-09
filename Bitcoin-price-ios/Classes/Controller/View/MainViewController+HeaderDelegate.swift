@@ -12,6 +12,7 @@ extension MainViewController: HeaderViewDelegate {
     
     func headerViewRefreshDidSelect() {
         let ref = UserDefaults.standard.reference()
+        callTickerService()
         callMarketPriceService(reference: ref)
     }
 }

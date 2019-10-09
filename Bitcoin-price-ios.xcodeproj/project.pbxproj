@@ -39,6 +39,12 @@
 		A39D4FE2234B8A12009E7758 /* TickerApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D4FE1234B8A12009E7758 /* TickerApiRouter.swift */; };
 		A39D4FE4234B8BC8009E7758 /* TickerApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D4FE3234B8BC8009E7758 /* TickerApiService.swift */; };
 		A39D4FE6234B9727009E7758 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D4FE5234B9727009E7758 /* Ticker.swift */; };
+		A3C5DDA7234C29F0005A9375 /* StatusBarNotificationBanner+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5DDA6234C29EF005A9375 /* StatusBarNotificationBanner+App.swift */; };
+		A3C5DDAA234C2AE4005A9375 /* BannerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5DDA9234C2AE4005A9375 /* BannerColors.swift */; };
+		A3C5DDAC234C38B4005A9375 /* RemoteConfig+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5DDAB234C38B4005A9375 /* RemoteConfig+Fetch.swift */; };
+		A3C5DDAF234C3D51005A9375 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3C5DDAE234C3D51005A9375 /* GoogleService-Info.plist */; };
+		A3C5DDB1234C3F69005A9375 /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5DDB0234C3F69005A9375 /* AppDelegate+Setup.swift */; };
+		A3C5DDB4234C45B2005A9375 /* Fonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3C5DDB3234C45B2005A9375 /* Fonts.bundle */; };
 		A3F1343D2349A439004835CD /* Date+Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1343C2349A439004835CD /* Date+Calc.swift */; };
 		A3F1343F2349A8B0004835CD /* MarketPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1343E2349A8B0004835CD /* MarketPrice.swift */; };
 		A3F134412349A96F004835CD /* MarketPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F134402349A96F004835CD /* MarketPriceService.swift */; };
@@ -94,6 +100,12 @@
 		A39D4FE1234B8A12009E7758 /* TickerApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerApiRouter.swift; sourceTree = "<group>"; };
 		A39D4FE3234B8BC8009E7758 /* TickerApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerApiService.swift; sourceTree = "<group>"; };
 		A39D4FE5234B9727009E7758 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		A3C5DDA6234C29EF005A9375 /* StatusBarNotificationBanner+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatusBarNotificationBanner+App.swift"; sourceTree = "<group>"; };
+		A3C5DDA9234C2AE4005A9375 /* BannerColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerColors.swift; sourceTree = "<group>"; };
+		A3C5DDAB234C38B4005A9375 /* RemoteConfig+Fetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemoteConfig+Fetch.swift"; sourceTree = "<group>"; };
+		A3C5DDAE234C3D51005A9375 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3C5DDB0234C3F69005A9375 /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
+		A3C5DDB3234C45B2005A9375 /* Fonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Fonts.bundle; sourceTree = "<group>"; };
 		A3F1343C2349A439004835CD /* Date+Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Calc.swift"; sourceTree = "<group>"; };
 		A3F1343E2349A8B0004835CD /* MarketPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPrice.swift; sourceTree = "<group>"; };
 		A3F134402349A96F004835CD /* MarketPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceService.swift; sourceTree = "<group>"; };
@@ -159,6 +171,7 @@
 		A372FF22234865090053B581 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A3C5DDA8234C2ACC005A9375 /* BaseNotificationBanner */,
 				A3F13456234A3295004835CD /* UIButton */,
 				A372FF552348EA4B0053B581 /* LineChartView */,
 				A372FF492348BF550053B581 /* UIView */,
@@ -171,6 +184,7 @@
 			children = (
 				A372FEEB234794C60053B581 /* AppDelegate.swift */,
 				A372FEED234794C60053B581 /* SceneDelegate.swift */,
+				A3C5DDB0234C3F69005A9375 /* AppDelegate+Setup.swift */,
 				A372FF402348B8530053B581 /* Controller */,
 				A372FF312348934E0053B581 /* Helper */,
 				A372FF2923486E4D0053B581 /* Model */,
@@ -194,12 +208,12 @@
 		A372FF2523486C8C0053B581 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A372FF2723486CF20053B581 /* MainViewController.swift */,
-				A372FF2B23486EE60053B581 /* HeaderView.swift */,
-				A372FF2D23486EF30053B581 /* FooterView.swift */,
 				A372FF2F23486F050053B581 /* BodyView.swift */,
-				A372FF38234895D40053B581 /* MainViewController+HeaderDelegate.swift */,
+				A372FF2D23486EF30053B581 /* FooterView.swift */,
+				A372FF2B23486EE60053B581 /* HeaderView.swift */,
+				A372FF2723486CF20053B581 /* MainViewController.swift */,
 				A372FF5A2348EF790053B581 /* MainViewController+FooterDelegate.swift */,
+				A372FF38234895D40053B581 /* MainViewController+HeaderDelegate.swift */,
 				A3F134542349EC74004835CD /* MainViewController+ServiceDelegate.swift */,
 			);
 			path = View;
@@ -248,12 +262,14 @@
 				A372FF532348E05E0053B581 /* Date+Formatter.swift */,
 				A3F1345F234A4782004835CD /* Float+Formatter.swift */,
 				A372FF3A23489F9B0053B581 /* NSObject+ClassName.swift */,
+				A3C5DDA6234C29EF005A9375 /* StatusBarNotificationBanner+App.swift */,
 				A372FF472348BC450053B581 /* String+Localized.swift */,
 				A3F13459234A333C004835CD /* UIColor+App.swift */,
 				A3F1345B234A455F004835CD /* UIFont+App.swift */,
 				A372FF3E2348B76E0053B581 /* UIView+Animations.swift */,
 				A372FF4D2348BFB60053B581 /* UIView+Shadow.swift */,
 				A372FF322348936F0053B581 /* UserDefaults+App.swift */,
+				A3C5DDAB234C38B4005A9375 /* RemoteConfig+Fetch.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -312,10 +328,28 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		A3C5DDA8234C2ACC005A9375 /* BaseNotificationBanner */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5DDA9234C2AE4005A9375 /* BannerColors.swift */,
+			);
+			path = BaseNotificationBanner;
+			sourceTree = "<group>";
+		};
+		A3C5DDAD234C3D42005A9375 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5DDAE234C3D51005A9375 /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		A3F134442349B22B004835CD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A3C5DDAD234C3D42005A9375 /* Firebase */,
 				A3F134452349B249004835CD /* Settings.bundle */,
+				A3C5DDB3234C45B2005A9375 /* Fonts.bundle */,
 				A3F134512349EB05004835CD /* BitPrice.xcdatamodeld */,
 			);
 			path = Resources;
@@ -358,6 +392,7 @@
 				A372FEE5234794C60053B581 /* Frameworks */,
 				A372FEE6234794C60053B581 /* Resources */,
 				6F81C57A19F29DE3E000AB41 /* [CP] Embed Pods Frameworks */,
+				A3C5DDB2234C4207005A9375 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -407,6 +442,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A372FEF8234794C70053B581 /* LaunchScreen.storyboard in Resources */,
+				A3C5DDB4234C45B2005A9375 /* Fonts.bundle in Resources */,
+				A3C5DDAF234C3D51005A9375 /* GoogleService-Info.plist in Resources */,
 				A372FF442348BBD40053B581 /* Localizable.strings in Resources */,
 				A3F134462349B249004835CD /* Settings.bundle in Resources */,
 				A372FEF5234794C70053B581 /* Assets.xcassets in Resources */,
@@ -426,16 +463,49 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bitcoin-price-ios/Pods-Bitcoin-price-ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A3C5DDB2234C4207005A9375 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path\n\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 		D02DF5C85F282429F47F782E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -472,6 +542,7 @@
 				A372FF542348E05E0053B581 /* Date+Formatter.swift in Sources */,
 				A3F13458234A32A8004835CD /* Button.swift in Sources */,
 				A39D4FE0234B8950009E7758 /* TickerService.swift in Sources */,
+				A3C5DDA7234C29F0005A9375 /* StatusBarNotificationBanner+App.swift in Sources */,
 				A372FF632348F15C0053B581 /* RequestEntity.swift in Sources */,
 				A372FF612348F0B60053B581 /* RequestDbService.swift in Sources */,
 				A3F134552349EC74004835CD /* MainViewController+ServiceDelegate.swift in Sources */,
@@ -494,7 +565,9 @@
 				A372FF522348C3740053B581 /* BodyHistoryView.swift in Sources */,
 				A3F1344C2349D8E8004835CD /* MarketPriceApiRouter.swift in Sources */,
 				A372FF3B23489F9B0053B581 /* NSObject+ClassName.swift in Sources */,
+				A3C5DDB1234C3F69005A9375 /* AppDelegate+Setup.swift in Sources */,
 				A3F134532349EB05004835CD /* BitPrice.xcdatamodeld in Sources */,
+				A3C5DDAC234C38B4005A9375 /* RemoteConfig+Fetch.swift in Sources */,
 				A372FF2C23486EE60053B581 /* HeaderView.swift in Sources */,
 				A39D4FE4234B8BC8009E7758 /* TickerApiService.swift in Sources */,
 				A3F1344A2349D698004835CD /* MarketPriceApiService.swift in Sources */,
@@ -502,6 +575,7 @@
 				A372FF3F2348B76E0053B581 /* UIView+Animations.swift in Sources */,
 				A39D4FE2234B8A12009E7758 /* TickerApiRouter.swift in Sources */,
 				A3F134432349A9ED004835CD /* ApiService.swift in Sources */,
+				A3C5DDAA234C2AE4005A9375 /* BannerColors.swift in Sources */,
 				A3F1343D2349A439004835CD /* Date+Calc.swift in Sources */,
 				A3F134482349D4EB004835CD /* Bundle+InfoPlist.swift in Sources */,
 				A3F1344E2349E250004835CD /* Date+Components.swift in Sources */,
